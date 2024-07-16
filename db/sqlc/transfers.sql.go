@@ -67,8 +67,8 @@ OFFSET $4
 type ListTransfersParams struct {
 	FromAccountID int64 `json:"from_account_id"`
 	ToAccountID   int64 `json:"to_account_id"`
-	Limit         int64 `json:"limit"`
-	Offset        int64 `json:"offset"`
+	Limit         int32 `json:"limit"`
+	Offset        int32 `json:"offset"`
 }
 
 func (q *Queries) ListTransfers(ctx context.Context, arg ListTransfersParams) ([]Transfer, error) {
