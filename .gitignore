@@ -25,4 +25,4 @@ go.work.sum
 .env
 
 #yaml until i figure out env variables in them
-*.yaml
+sqlc.yaml
